@@ -78,7 +78,6 @@ while True:
                        '09000:'
                        '90900:'
                        '00000'))
-        # time.sleep_ms(1000)
         continue
     if state == State.P2_JUMPED:
         display.show(Image('00000:'
@@ -86,10 +85,8 @@ while True:
                        '00090:'
                        '00909:'
                        '00000'))
-        # time.sleep_ms(1000)
         continue
 
-    start_time = time.ticks_ms()
     while True:
         if pin1.is_touched():
             display.show(Image('00000:'
@@ -97,7 +94,6 @@ while True:
                        '90900:'
                        '09000:'
                        '00000'))
-            # time.sleep_ms(1000)
             break
         if pin2.is_touched():
             display.show(Image('00000:'
@@ -105,9 +101,5 @@ while True:
                        '00909:'
                        '00090:'
                        '00000'))
-            # time.sleep_ms(1000)
             break
         time.sleep_ms(1)
-
-    # reaction_time = time.ticks_diff(time.ticks_ms(), start_time)
-    # display.scroll("{:.3f}".format(reaction_time / 1000.0))
