@@ -6,8 +6,9 @@ lights out, it's the start signal.
 ![sample screen](./screen.png)
 
 ## Development Environment
-This program runs in MicroPython within the [micro:bit Python Editor](https://python.microbit.org/v/3).
-(Not tested in Python within the [MakeCode editor](https://makecode.microbit.org/#editor))
+This program runs in MicroPython within the
+[micro:bit Python Editor](https://python.microbit.org/v/3). (Not tested in 
+Python within the [MakeCode editor](https://makecode.microbit.org/#editor))
 
 ## Setting up a Python Development Environment
 
