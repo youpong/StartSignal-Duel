@@ -6,6 +6,7 @@ import music
 LED_BRIGHTNESS = 5
 LIGHT_INTERVAL = 1000
 
+
 class State:
     NO_JUMP_START = 0
     P1_JUMPED = 1
@@ -74,32 +75,32 @@ while True:
     state = start_sequence()
     if state == State.P1_JUMPED:
         display.show(Image('00000:'
-                       '90900:'
-                       '09000:'
-                       '90900:'
-                       '00000'))
+                           '90900:'
+                           '09000:'
+                           '90900:'
+                           '00000'))
         continue
     if state == State.P2_JUMPED:
         display.show(Image('00000:'
-                       '00909:'
-                       '00090:'
-                       '00909:'
-                       '00000'))
+                           '00909:'
+                           '00090:'
+                           '00909:'
+                           '00000'))
         continue
 
     while True:
         if pin1.is_touched():
             display.show(Image('00000:'
-                       '09000:'
-                       '90900:'
-                       '09000:'
-                       '00000'))
+                               '09000:'
+                               '90900:'
+                               '09000:'
+                               '00000'))
             break
         if pin2.is_touched():
             display.show(Image('00000:'
-                       '00090:'
-                       '00909:'
-                       '00090:'
-                       '00000'))
+                               '00090:'
+                               '00909:'
+                               '00090:'
+                               '00000'))
             break
         time.sleep_ms(1)
